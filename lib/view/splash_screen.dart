@@ -8,6 +8,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
             child: Text('splash screen'),
@@ -16,7 +17,8 @@ class SplashScreen extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, RoutesName.login);
             },
-            child: const Text('click'),
+            child: const Text('Go to login screen',
+            style: TextStyle(fontSize: 20,color: Colors.blueAccent),),
           )
         ],
       ),
